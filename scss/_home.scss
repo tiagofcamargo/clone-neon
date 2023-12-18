@@ -97,6 +97,58 @@
       }
     }
   }
+  @include responsive(1050px) {
+    padding-top: 14.5rem;
+    height: 65.6rem;
+    .text {
+      ul {
+        margin-top: 4.5rem;
+      }
+    }
+    .area-image {
+      margin-right: -10px;
+      h2 {
+        margin-bottom: 1.5rem;
+      }
+        .image {
+          height: 45rem;
+          .card-front {
+              max-width: 35rem;
+              top: 8rem;
+          }
+          .card-back {
+            max-width: 29rem;
+            bottom: 0;
+          }
+          .circle {
+            max-width: 46rem;
+          }
+      }
+    }
+  }
+  @include responsive(991px) {
+    height: 89.1rem;
+    background-size: cover;
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .text {
+      margin-bottom: 5rem;
+      max-width: 100%;
+      text-align: center;
+      @include flex(column, center, center);
+      h3 {
+        text-align: center;
+      }
+    }
+    .area-image {
+      .image {
+        max-width: 511px;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 .s-card-neon {
